@@ -1,12 +1,12 @@
-import React from "react";
-import UserForm from "./pages/UserForm";
+import React from 'react';
+import { FormProvider } from './contexts/FormContext';
+import UserForm from './pages/UserForm';
 
 const App: React.FC = () => {
   return (
-    <div className="app">
-      <h1>User Form</h1>
+    <FormProvider>
       <UserForm />
-    </div>
+    </FormProvider>
   );
 };
 
