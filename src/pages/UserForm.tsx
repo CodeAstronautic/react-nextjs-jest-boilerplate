@@ -12,7 +12,7 @@ const UserForm: React.FC = () => {
   };
 
   return (
-    <div className="form-page">
+    <div className="form-page" data-testid="form-page">
       <h1>User Form</h1>
       <FormContainer formData={formData} handleChange={handleChange} handleSubmit={handleSubmit} />
     </div>
