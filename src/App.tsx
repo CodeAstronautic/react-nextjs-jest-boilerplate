@@ -1,12 +1,13 @@
-import React from 'react'
-import './App.css'
+import React from "react";
+import UserForm from "./pages/UserForm";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <React.Fragment>
-      Hello
-    </React.Fragment>
-  )
-}
+    <div className="app">
+      <h1>User Form</h1>
+      <UserForm />
+    </div>
+  );
+};
 
-export default App
+export default App;
