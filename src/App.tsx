@@ -4,13 +4,13 @@ import UserForm from './pages/UserForm';
 
 const App: React.FC = () => {
   return (
-    <>
+    <React.Fragment>
       <FormProvider>
         <div className="App">
           <UserForm />
         </div>
       </FormProvider>
-    </>
+    </React.Fragment>
   );
 };
 
