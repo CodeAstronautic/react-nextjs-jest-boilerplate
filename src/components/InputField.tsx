@@ -1,7 +1,7 @@
 import React from 'react';
 import { FormData } from '../types/formTypes';
 
-interface InputFieldProps {
+export interface InputFieldProps {
   label: string;
   name: keyof FormData;
   type?: string;
