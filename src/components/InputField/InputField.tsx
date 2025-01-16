@@ -1,7 +1,7 @@
 import React from 'react';
-import { FormData } from '../types/formTypes';
+import { FormData } from '../../types/formTypes';
 
-interface InputFieldProps {
+export interface InputFieldProps {
   label: string;
   name: keyof FormData;
   type?: string;
@@ -9,7 +9,13 @@ interface InputFieldProps {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const InputField: React.FC<InputFieldProps> = ({ label, name, type = 'text', value, onChange }) => {
+const InputField: React.FC<InputFieldProps> = ({
+  label,
+  name,
+  type = 'text',
+  value,
+  onChange,
+}) => {
   return (
     <div className="input-field">
       <label htmlFor={name}>{label}</label>

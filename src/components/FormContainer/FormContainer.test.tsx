@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import { expect, vi } from 'vitest';
-import FormContainer from './FormContainer';
+import FormContainer from '../FormContainer/FormContainer';
 
 describe('FormContainer Component', () => {
   const mockHandleChange = vi.fn();

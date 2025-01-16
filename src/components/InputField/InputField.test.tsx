@@ -1,6 +1,6 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import { expect, vi } from 'vitest';
-import InputField from './InputField';
+import InputField from '../../components/InputField/InputField';
 
 describe('InputField Component', () => {
   const mockOnChange = vi.fn();
