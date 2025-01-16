@@ -1,7 +1,7 @@
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import { vi } from 'vitest';
-import UserForm from './UserForm';
-import * as useFormDataHook from '../hooks/useFormData';
+import UserForm from '../UserForm/UserForm';
+import * as useFormDataHook from '../../hooks/useFormData';
 
 describe('UserForm', () => {
   it('should render the form and display the title', () => {
@@ -15,9 +15,13 @@ describe('UserForm', () => {
 
   it('should call handleSubmit when form is submitted', async () => {
     const mockHandleSubmit = vi.fn();
-    
+
     vi.spyOn(useFormDataHook, 'default').mockReturnValue({
-      formData: { name: 'John', email: 'john@example.com', password: 'password123' },
+      formData: {
+        name: 'John',
+        email: 'john@example.com',
+        password: 'password123',
+      },
       handleChange: vi.fn(),
       resetForm: vi.fn(),
     });
@@ -35,7 +39,11 @@ describe('UserForm', () => {
     const mockResetForm = vi.fn();
 
     vi.spyOn(useFormDataHook, 'default').mockReturnValue({
-      formData: { name: 'John', email: 'john@example.com', password: 'password123' },
+      formData: {
+        name: 'John',
+        email: 'john@example.com',
+        password: 'password123',
+      },
       handleChange: vi.fn(),
       resetForm: mockResetForm,
     });

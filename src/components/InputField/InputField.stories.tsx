@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Meta, StoryFn } from '@storybook/react'; // Use StoryFn for defining templates
 import InputField, { InputFieldProps } from './InputField';
-import { FormData } from '../types/formTypes';
+import { FormData } from '../../types/formTypes';
 
 export default {
   title: 'Components/InputField',

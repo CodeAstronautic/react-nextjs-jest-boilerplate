@@ -1,5 +1,5 @@
 import { Meta, StoryFn } from '@storybook/react';
-import UserForm from './UserForm';
+import UserForm from '../UserForm/UserForm';
 import { within, userEvent } from '@storybook/testing-library';
 
 export default {
@@ -46,5 +46,4 @@ Default.play = async ({ canvasElement, loaded }) => {
 
   const submitButton = await canvas.findByRole('button', { name: /submit/i });
   userEvent.click(submitButton);
-
 };

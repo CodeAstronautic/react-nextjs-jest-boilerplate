@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import FormContainer from './FormContainer';
-import { FormData } from '../types/formTypes';
+import FormContainer from '../FormContainer/FormContainer';
+import { FormData } from '../../types/formTypes';
 
 export default {
   title: 'Components/FormContainer',

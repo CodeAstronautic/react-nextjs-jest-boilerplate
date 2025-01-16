@@ -1,6 +1,6 @@
 import React from 'react';
 import { FormProvider } from './contexts/FormContext';
-import UserForm from './pages/UserForm';
+import UserForm from './pages/UserForm/UserForm';
 
 const App: React.FC = () => {
   return (

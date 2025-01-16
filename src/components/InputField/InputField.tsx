@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormData } from '../types/formTypes';
+import { FormData } from '../../types/formTypes';
 
 export interface InputFieldProps {
   label: string;
@@ -9,7 +9,13 @@ export interface InputFieldProps {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const InputField: React.FC<InputFieldProps> = ({ label, name, type = 'text', value, onChange }) => {
+const InputField: React.FC<InputFieldProps> = ({
+  label,
+  name,
+  type = 'text',
+  value,
+  onChange,
+}) => {
   return (
     <div className="input-field">
       <label htmlFor={name}>{label}</label>
